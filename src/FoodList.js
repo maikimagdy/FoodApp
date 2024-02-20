@@ -8,7 +8,7 @@ function FoodList({ data }) {
   return (
     <div>
       {data.map((e) => (
-        <div className="m-4">
+        <div className="m-2 h-96 overflow-auto ">
           <OneItem
             title={e.title}
             img={e.image}

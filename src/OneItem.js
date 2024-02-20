@@ -9,15 +9,14 @@ import Reciep from "./Reciep";
 
 export default function OneItem({ title, img, id, openItem, setOpenItem }) {
   const isOpen = openItem === id;
-
   const handleClick = () => {
     setOpenItem(isOpen ? null : id);
   };
   console.log(openItem);
   return (
-    <div className="flex justify-between">
-      <Card className="w-1/2" sx={{ maxWidth: 345, maxHeight: 345 }}>
-        <CardMedia sx={{ height: 140 }} image={img} title={title} />
+    <div className="flex gap-2 w-full">
+      <Card className="w-1/2">
+        <CardMedia className="h-80" image={img} title={title} />
         <CardContent>
           <Typography
             gutterBottom

@@ -49,7 +49,7 @@ function Reciep({ id }) {
   };
   console.log(detail);
   return Object.keys(detail).length ? (
-    <Card sx={{ maxWidth: 500 }} className="my-2">
+    <Card sx={{ maxWidth: 500 }} className="w-full overflow-auto">
       <CardHeader
         avatar={
           <Avatar sx={{ bgcolor: red[500] }} aria-label="recipe">

@@ -4,7 +4,7 @@ import React from "react";
 function Instructions({ detail, expanded }) {
   return (
     <Collapse in={expanded} timeout="auto" unmountOnExit>
-      <CardContent className="overflow-y-auto h-auto h-80">
+      <CardContent className="overflow-y-auto h-80">
         <h1 className="text-3xl">Method :</h1>
         <Typography>
           {detail.analyzedInstructions &&
